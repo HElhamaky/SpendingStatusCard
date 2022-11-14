@@ -1,0 +1,62 @@
+@font-face {
+  font-family: ITC;
+  src: url(/fonts/ITC\ Handel\ Gothic\ Arabic\ W23.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: ITC-Bold;
+  src: url(/fonts/ITC-Handel-Gothic-Arabic-Bold.ttf);
+  font-weight: bold;
+}
+
+html,
+body {
+  background-color: #f5f5f5;
+}
+
+.cardPageContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.spendingStatusCard {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin: 1rem;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 630px;
+  max-height: 316px;
+  flex-grow: 1;
+}
+
+.spendingStatusCardTitle {
+  grid-area: 1 / 1 / 2 / 6;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  font-family: ITC-Bold !important;
+  padding-right: 2rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.spendingStatusCardTitle i {
+  font-size: 25px;
+  color: #7d7d7d;
+}
+
+.spendingStatusCardTitle p {
+  font-family: ITC;
+  margin-right: 0.5rem;
+}
+
+.spendingStatusChart {
+  grid-area: 2 / 1 / 6 / 6;
+  width: 95%;
+  margin-right: auto;
+  margin-left: 10px;
+  padding-top: 0.5rem;
+}
